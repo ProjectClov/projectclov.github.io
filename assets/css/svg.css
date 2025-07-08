@@ -1,0 +1,39 @@
+.tiktok-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiktok-icon-stroke {
+  position: absolute;
+  opacity: 0;
+}
+.tiktok-icon-container:hover .tiktok-icon {
+  opacity: 0;
+}
+
+.tiktok-icon-container:hover .tiktok-icon-stroke {
+  opacity: 1;
+}
+.folder-icon-path {
+  fill: #972ab3;
+  stroke: none;
+  stroke-width: 0;
+}
+.folder-icon .file-in-folder-path {
+  clip-path: inset(100% 0 0 0);
+  fill: #fff;
+  stroke: none;
+  stroke-width: 0;
+  transition: 1s var(--cubic-superfast-in);
+}
+
+.folder-icon:hover .file-in-folder-path {
+  clip-path: inset(0 0 0 0);
+}
+
+.title:hover .title-stroke {
+  /* filter: invert(); */
+  filter: hue-rotate(40deg);
+}
